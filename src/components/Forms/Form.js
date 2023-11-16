@@ -58,8 +58,11 @@ const Form = ({ addNewPet, setLoading, setError }) => {
 
   return (
     <div className="form-section">
-      <p className="new-pet">Add New Pet!</p>
-      <img className="paws-image" src={paws} alt="paws" />
+      <div>
+        <p className="new-pet">Add New Pet!</p>
+        <img className="paws-image" src={paws} alt="paws" />
+      </div>
+  
 
       <form className="form">
         <div className="pets-name-section sec">

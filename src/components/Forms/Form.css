@@ -1,13 +1,13 @@
 .form-section {
   display: flex;
   flex-direction: column;
-  padding: .6em;
+  padding: 0.6em;
   border: solid 10px #72788d;
-  max-width: 20rem;
+  width: 20rem;
   border-radius: 15px;
   background-color: #e3d7ff;
   height: 34rem;
-  margin: 0.6rem;
+  margin: 1rem 0.5rem 0rem;
 }
 
 .form {
@@ -25,7 +25,7 @@ p {
 }
 
 .sec {
-  padding: 0.7em;
+  padding: 0.7em 1.4em;
   font-size: 1em;
   font-weight: bold;
   display: flex;
@@ -45,19 +45,17 @@ input {
 }
 
 .paws-image {
-  font-size: 1em;
-  padding: 1em;
-  justify-content: center;
+  block-size: 3em;
 }
 
 .button {
-  padding: 10px 40px;
+  padding: 0.7em 2.5em;
   background: #000;
   border: 0;
   color: #fff;
   text-transform: uppercase;
   font-family: helvetica;
-  font-size: 15px;
+  font-size: 1em;
   letter-spacing: 3px;
   position: relative;
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -107,58 +105,74 @@ input {
   right: 15px;
 }
 
-@media screen and (max-width: 900px) {
-  .home-view {
-    display: flex;
-    justify-content: center;
+@media screen and (max-width: 1080px) {
+  .paws-image {
+    block-size: 2.5em;
+    padding: 0.5em;
+  }
+  .new-pet {
+    margin: 1em;
   }
   .form-section {
-    width: 60%;
-    margin-top: 0%;
-    height: 21rem;
-    display: flex;
+    width: 40rem;
+    margin-top: 1rem;
+    height: 18rem;
     align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
   }
-  .form-wrapper div:not(.pets-type-checkbox) {
-    display: flex;
-  }
-  .form-wrapper label {
-    width: 10em;
-  }
-  .pets-type-checkbox {
-    margin-left: 6.5rem;
-  }
-
-  .paws-image {
-    width: 250px;
+  .form {
+    margin-top: 2.5em;
   }
   .sec {
-    padding: 5px;
+    padding: 0.4em;
+    flex-direction: row;
+    margin-right: 3em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .paws-image {
+    block-size: 2em;
+    padding: 1.5em;
+  }
+  .form-section {
+    width: 31rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .paws-image {
+    display: none;
+  }
+  .form-section {
+    width: 19.5rem;
+    flex-direction: column;
+    border: solid 5px #72788d;
+  }
+  .form {
+    margin: 0;
+  }
+  .new-pet {
+    margin: 0em;
   }
   .button {
-    padding: 0px;
-    margin: 0px;
-    font-size: 15px;
-    margin-left: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin: 0;
+  }
+  .sec {
+    margin-right: 0.5em;
   }
 }
-
-@media screen and (max-width: 524px) {
-  .paws-image {
-    width: 0px;
-  }
-}
-
-@media screen and (max-width: 431px) {
-  p {
-    font-size: 20px;
-  }
-
+@media screen and (max-width: 350px) {
   .form-section {
-    height: 15rem;
-    overflow-y: scroll;
-    margin-left: 55px;
+    width: 15rem;
+  }
+  .sec {
+    font-size: 0.8em;
+  }
+  p {
+    font-size: 1em;
+  }
+  .button {
+    font-size: 0.8em;
   }
 }
