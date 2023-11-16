@@ -29,7 +29,7 @@ Follow installation instructions for the [backend repo](https://github.com/alice
 
 .....OR:
 
-See the deployed project [here](https://petbook-flame.vercel.app/)
+See the deployed project [here](https://petbook-three.vercel.app/)
 
 
 ## 📚 Learning Goals
