@@ -1,14 +1,7 @@
 article {
   background: #fbcb7f;
-  /* background: cover; */
   margin-top: -2.5rem;
-  height: 100vh
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 2rem 2rem;
-  align-items: center; */
+  height: 100vh;
 }
 
 .details-container {
@@ -17,7 +10,7 @@ article {
   border: 3px solid #333333;
   border-radius: 15px;
   background: white;
-  margin: 5rem
+  margin: 5rem;
 }
 
 .pet {
@@ -25,16 +18,18 @@ article {
   flex-direction: column;
   width: 15em;
   justify-content: space-evenly;
+  margin-top: 0.5rem;
 }
 
-.pet h2, .pet p {
+.pet h2,
+.pet p {
   background: #ffe8cf;
-  padding: 1em
+  padding: 1em;
 }
 
 .pet-type {
   font-size: 2em;
-  margin: .5rem 0
+  margin: 0.5rem 0;
 }
 .pet-info p {
   background: #ffe8cf;
@@ -46,11 +41,11 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 40em
+  width: 40em;
 }
 
 .pet-image {
-  border: .5em solid #72788D;
+  border: 0.5em solid #72788d;
   border-radius: 10px;
   height: 10em;
   width: 14em;
@@ -67,22 +62,22 @@ article {
 .back-to-all-pets-button {
   padding: 10px 40px;
   background: #000;
-  border:0;
+  border: 0;
   color: #fff;
   text-transform: uppercase;
   font-family: helvetica;
   font-size: 15px;
   letter-spacing: 3px;
   position: relative;
-  transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   cursor: pointer;
   display: block;
   margin: 40px auto;
   border-radius: 20px;
 }
 
-.back-to-all-pets-button:hover{
-  padding: 15px 20px ;
+.back-to-all-pets-button:hover {
+  padding: 15px 20px;
 }
 
 .spirals-container {
@@ -99,13 +94,13 @@ article {
   .back-to-all-pets-button-container {
     margin-right: 50rem;
   }
-    .details-container {
+  .details-container {
     display: flex;
     justify-content: space-around;
     border: 3px solid #333333;
     border-radius: 15px;
     background: white;
-    margin: 3rem
+    margin: 3rem;
   }
 }
 
@@ -120,10 +115,9 @@ article {
     border: 3px solid #333333;
     border-radius: 15px;
     background: white;
-    margin: 2.5rem
+    margin: 2.5rem;
   }
 }
-
 
 @media screen and (max-width: 1030px) {
   .back-to-all-pets-button-container {
@@ -136,7 +130,7 @@ article {
     border: 3px solid #333333;
     border-radius: 15px;
     background: white;
-    margin: 2rem
+    margin: 2rem;
   }
 
   .pet {
@@ -150,7 +144,7 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 23em
+    width: 23em;
   }
 }
 
@@ -165,7 +159,7 @@ article {
     border: 3px solid #333333;
     border-radius: 15px;
     background: white;
-    margin: 1.5rem
+    margin: 1.5rem;
   }
 
   .pet {
@@ -179,48 +173,53 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 23em
+    width: 23em;
+    align-items: center;
   }
   .spirals-container {
-    margin: 1rem -.5rem
+    margin: 1rem -0.5rem;
   }
-  
+
   .pet-image {
-    border: .5em solid #72788D;
+    border: 0.5em solid #72788d;
     border-radius: 10px;
     height: 9em;
     width: 13.5em;
   }
-  .pet h2, .pet p {
+  .pet h2,
+  .pet p {
     background: #ffe8cf;
-    padding: .7em;
+    padding: 0.7em;
     font-size: 1.4em;
   }
-  
+
   .pet-type {
     font-size: 1.8em;
-    margin: .3rem 0
+    margin: 0.3rem 0;
   }
   .pet-info p {
     background: #ffe8cf;
-    padding: .9em;
+    padding: 0.9em;
     justify-content: flex-start;
     font-size: 1.4em;
   }
 }
 
 @media screen and (max-width: 740px) {
+  article {
+    height: 130vh;
+  }
   .back-to-all-pets-button-container {
     margin-right: 26rem;
   }
-    .details-container {
+  .details-container {
     display: flex;
     justify-content: space-around;
     border: 3px solid #333333;
     border-radius: 15px;
     background: white;
     margin: 1rem;
-    padding: 1em
+    padding: 1em;
   }
 
   .spirals-container {
@@ -230,9 +229,9 @@ article {
 @media screen and (max-width: 680px) {
   .back-to-all-pets-button-container {
     margin-right: 18rem;
-    padding: 0 .5rem
+    padding: 0 0.5rem;
   }
-    .details-container {
+  .details-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -240,34 +239,34 @@ article {
     border: 3px solid #333333;
     border-radius: 15px;
     background: white;
-    margin: .5rem;
-    padding: .5em
+    margin: 0.5rem;
+    padding: 0.5em;
   }
 
   .spirals-container {
     display: none;
   }
-  
+
   .pet div {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 1.1rem
+    margin-left: 1.1rem;
   }
 
   .pet-image {
-    border: .5em solid #72788D;
+    border: 0.5em solid #72788d;
     border-radius: 10px;
     height: 10em;
     width: 12em;
-    
   }
-  .pet h2, .pet p {
+  .pet h2,
+  .pet p {
     background: #ffe8cf;
-    padding: .4em;
+    padding: 0.4em;
     font-size: 1.4em;
   }
-  
+
   .pet-type {
     font-size: 1.5em;
   }
@@ -276,9 +275,16 @@ article {
     display: flex;
     flex-direction: column;
     background: #ffe8cf;
-    padding: .7em;
+    padding: 0.7em;
     font-size: 1.4em;
     justify-content: center;
-    margin: .5em
+    margin: 0.5em;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .pet-info p {
+    font-size: 1.2em;
+    width: 12em;
   }
 }
