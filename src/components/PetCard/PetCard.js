@@ -13,14 +13,16 @@ const PetCard = ({ id, name, owner, type, deletePet }) => {
         <img className='spirals' src={spirals} alt='spiral styling'/>
       </div>
       <div className='info-container'>
+        <div className='info'>
+        {checkIcon(type)}
+          <h2>{name}</h2>
+          <h3>{type}</h3>
+          <p className='owner'>Owner: {owner}</p>
+        <Link className='details' to={`/${id}`}>{checkLinkImage(type)}</Link>
+        </div>
         <div className='icon-container'>
           <img className='delete-icon' src={deleteIcon} alt='delete icon' onClick={() => deletePet(id)}/>
         </div>
-        {checkIcon(type)}
-        <h2>{name}</h2>
-        <h3>{type}</h3>
-        <p className='owner'>Owner: {owner}</p>
-        <Link to={`/${id}`}>{checkLinkImage(type)}</Link>
       </div>
     </div>
   )

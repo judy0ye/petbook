@@ -1,12 +1,12 @@
 .form-section {
   display: flex;
   flex-direction: column;
-  padding: 1em;
-  border: solid 15px #72788d;
-  width: 20rem;
+  padding: .6em;
+  border: solid 10px #72788d;
+  max-width: 20rem;
   border-radius: 15px;
   background-color: #e3d7ff;
-  height: 30rem;
+  height: 34rem;
   margin: 0.6rem;
 }
 
