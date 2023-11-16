@@ -146,8 +146,9 @@ input {
   }
   .form-section {
     width: 19.5rem;
+    height: 19rem;
     flex-direction: column;
-    border: solid 5px #72788d;
+    border: solid 4px #72788d;
   }
   .form {
     margin: 0;
@@ -165,8 +166,8 @@ input {
 @media screen and (max-width: 350px) {
   .form-section {
     width: 15.5rem;
-    height: 19rem;
-    border: solid 5px #72788d;
+    
+    border: solid 3px #72788d;
   }
   .sec {
     font-size: 0.8em;
