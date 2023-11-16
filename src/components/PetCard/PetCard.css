@@ -1,96 +1,72 @@
 .all-pets-container {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 5px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  margin-left: 55px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .pet-card {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 0.5fr 2.5fr;
   background-color: beige;
-  width: 300px;
-  margin: 10px;
-  height: 325px
-}
+  margin: 0.4rem;
+  width: 20em;
+  justify-items: start;
+  align-items: center;
 
-.pet-card h2, h3, p {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  margin: 0px;
-}
-
-.pet-card h3, 
-.pet-card p {
-  font-size: 15px;
-}
-
-.pet-icon{
-  height: 150px;
-  width: 150px;
+  height: 23em;
 }
 
 .info-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 85%;
 }
 
-.spiral-container {
-  display: flex;
-  height: 90%;
-  margin-left: 5px;
-}
-
-.icon-container {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  padding-right: 5px;
-  padding-top: 5px;
-}
-
-.delete-icon {
-  display: flex;
-  width: 20px;
-}
-
-.delete-icon:hover {
-  cursor: pointer;
+.pet-icon {
+  width: 75%;
 }
 
 .detail-link-icon {
-  height: 70px;
+  width: 8em;
 }
 
-@media screen and (max-width: 1364px) {
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8em;
+}
+.info h2,
+.info h3,
+.info p {
+  margin-bottom: 0em;
+}
+.delete-icon {
+  width: 1.5em;
+  padding: 0.3em 0.3em 0em 0em;
+}
+
+.spirals {
+  width: 80%;
+}
+
+@media screen and (max-width: 340px) {
   .pet-card {
-    width: 280px
+    width: 16em;
+    height: 20em;
   }
-}
-
-@media screen and (max-width: 1287px) {
-  .pet-card {
-    width: 250px
+  .spirals {
+    width: 70%;
   }
-}
-
-@media screen and (max-width: 1175px) {
-  .pet-card {
-    width: 200px;
+  .delete-icon {
+    width: 1em;
   }
-}
-
-@media screen and (max-width: 989px) {
-  .all-pets-container {
-    overflow-x: scroll;
-    width: 80%;
+  .pet-icon {
+    width: 65%;
+  }
+  .detail-link-icon {
+    width: 7em;
+  }
+  .info {
+    font-size: 0.7em;
   }
 }
